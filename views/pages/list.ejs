@@ -2,7 +2,7 @@
 <ul>
   <% items.forEach(item => { %>
     <li>
-      <form action="/category" method="post" class="disabled">
+      <form action="http://localhost:3000/categories" method="post" class="disabled">
         <input type="text" name="name" value="<%= item.name %>" disabled="true" />
         <a href="#" class="formToggle">(e)</a>
         <input type="hidden" name="_id" value="<%= item._id %>" />
@@ -15,7 +15,7 @@
 </ul>
 
 <h3>Add New Category</h3>
-<form action="/category" method="post">
+<form action="http://localhost:3000/categories" method="post">
   <input type="text" name="name" />
   <button>Save</button>
 </form>
