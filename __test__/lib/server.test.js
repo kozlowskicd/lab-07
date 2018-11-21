@@ -35,7 +35,4 @@ describe('web server', () => {
       }).catch(console.error);
 
   });
-
-
-
 });
